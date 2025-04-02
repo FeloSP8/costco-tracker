@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cursorinsights/schema/main/.cursorrules.schema.json",
+  "rules": [
+    {
+      "pattern": "**/*",
+      "intent": "Estoy trabajando en Windows. Usa rutas con backslashes `\\`, scripts compatibles con PowerShell y ten en cuenta entornos Windows para todo lo que se genere (scripts, paths, comandos, etc.)"
+    },
+    {
+      "pattern": "**/client/**/*.tsx",
+      "language": "typescript",
+      "style": "react",
+      "intent": "UI moderna, accesible, elegante, reusable, con separación clara de lógica y presentación"
+    },
+    {
+      "pattern": "**/client/**/*.ts",
+      "language": "typescript",
+      "style": "modern",
+      "intent": "Código limpio, tipado explícito, reutilizable, robusto, con buenas prácticas funcionales"
+    },
+    {
+      "pattern": "**/server/**/*.js",
+      "language": "javascript",
+      "style": "node",
+      "intent": "Endpoints RESTful bien estructurados, validaciones, manejo de errores, y modularidad clara"
+    },
+    {
+      "pattern": "**/server/scrapers/**/*.js",
+      "language": "javascript",
+      "style": "modern",
+      "intent": "Scripts robustos y resilientes para scraping web, tolerantes a errores y cambios de estructura DOM"
+    },
+    {
+      "pattern": "**/scripts/**/*.js",
+      "language": "javascript",
+      "style": "script",
+      "intent": "Utilidades de automatización simples, con logs claros y mensajes explicativos"
+    },
+    {
+      "pattern": "**/*.config.js",
+      "language": "javascript",
+      "style": "config",
+      "intent": "Configuraciones limpias, comentadas si es necesario, fácilmente modificables"
+    },
+    {
+      "pattern": "**/client/**/*.css",
+      "language": "css",
+      "style": "tailwind",
+      "intent": "Uso adecuado de utilidades de Tailwind, estilos consistentes, responsive y con dark mode"
+    },
+    {
+      "pattern": "**/*.md",
+      "language": "markdown",
+      "style": "documentation",
+      "intent": "Documentación clara, estructurada, útil para desarrolladores y usuarios"
+    },
+    {
+      "pattern": "**/*.sql",
+      "language": "sql",
+      "style": "relational",
+      "intent": "Consultas eficientes, legibles, bien indentadas y seguras frente a inyecciones"
+    },
+    {
+      "pattern": "**/*.test.ts",
+      "language": "typescript",
+      "style": "testing",
+      "intent": "Pruebas claras, unitarias, legibles, con buen coverage y casos límite"
+    }
+  ]
+}
